@@ -45,7 +45,6 @@ export default {
   methods: {
     async getMom() {
       try {
-        console.log(this.$root.$data.cart[0])
         let response = await axios.get("/api/photos/", {
           name: this.momName
         });
